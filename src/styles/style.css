@@ -1,0 +1,484 @@
+.section_name, .section_name_white, .contacts_name_white, .section_left {
+  text-align: center;
+  font-size: 32px;
+  margin: 0;
+  padding: 30px 0;
+}
+
+.section_name_white, .contacts_name_white {
+  padding-top: 150px;
+  color: white;
+  font-weight: 500;
+}
+
+.section_left {
+  text-align: left;
+}
+
+.slogan, .slogan_white {
+  text-align: center;
+  font-size: 18px;
+  margin: 5px;
+}
+
+.slogan_white {
+  color: white;
+}
+
+/* navigation */
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+  padding: 20px 150px;
+  background-color: #564E4A;
+  margin: 0;
+}
+
+nav .nav_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.btn {
+  text-align: center;
+}
+
+.btn_white, .btn_black {
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 0 30px;
+}
+
+.btn_black {
+  color: black;
+  font-weight: 500;
+  margin: 0;
+}
+
+.btn_banner {
+  padding-top: 50px;
+}
+
+.btn_submit {
+  margin-top: 30px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.logo {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+/* main page */
+.banner {
+  background-image: url(../img/banner.png);
+  background-size: cover;
+  height: calc(100vh - 90px);
+  margin: 0;
+}
+
+.idea, .story, .join {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 100px 150px;
+}
+
+.idea_image, .story_image, .join_image {
+  width: 580px;
+  height: 430px;
+  margin: 0;
+}
+
+.idea_text, .story_text, .join_text {
+  width: 500px;
+}
+
+.idea_form, .story_form, .join_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 500px;
+}
+
+.idea .main_text, .story .main_text, .join .main_text {
+  text-align: left;
+  font-size: 18px;
+}
+
+.idea_image {
+  background-image: url(../img/idea.png);
+}
+
+.story_image {
+  background-image: url(../img/story.png);
+}
+
+.join_image {
+  background-image: url(../img/join.png);
+}
+
+.btn_submit {
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 18px;
+  border: 0;
+  color: black;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 30px 0;
+}
+
+.input {
+  width: 350px;
+  height: 40px;
+  padding: 2px 20px;
+  margin: 10px 0;
+  background-color: white;
+  border: 0px solid #564E4A;
+  font-size: 18px;
+}
+
+/* catalog page */
+.select_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 50px 175px 0 150px;
+  margin: 0;
+}
+
+.select {
+  background-color: white;
+  border: 0px;
+  width: 250px;
+  height: 40px;
+  margin: 0 10px;
+  padding: 2px 10px;
+  color: gray;
+  font-size: 18px;
+}
+
+/* footer */
+.contacts {
+  background-image: url(../img/footer.png);
+  background-size: cover;
+  height: 440px;
+  margin: 0;
+}
+
+.contacts_item {
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  line-height: 40px;
+  margin: 0;
+}
+
+.contacts_name_white {
+  padding-top: 120px;
+}
+
+.contacts .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts .social_item {
+  font-size: 18px;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  padding-top: 80px;
+  margin: 0 40px;
+}
+
+/* candles */
+.candles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 280px;
+  height: 450px;
+  margin: 10px;
+  text-align: left;
+  font-size: 18px;
+}
+
+.candles_img {
+  width: 280px;
+  height: 280px;
+}
+
+.candles_name {
+  text-align: left;
+}
+
+.candles_price {
+  text-align: left;
+  font-weight: 600;
+}
+
+.btn_cart {
+  cursor: pointer;
+  background-color: transparent;
+  text-align: center;
+  font-size: 18px;
+  border: 0;
+  color: black;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 10px 50px;
+}
+
+/* candles list */
+.candless_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 100px 150px;
+}
+
+#error_result {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 18px;
+}
+
+.btn_search {
+  cursor: pointer;
+  background-color: #564E4A;
+  border: 0px;
+  width: 120px;
+  height: 40px;
+  margin: 0 10px;
+  padding: 2px 10px;
+  color: white;
+  font-size: 18px;
+}
+
+.errors {
+  font-size: 14px;
+}
+
+/* quest */
+.quest_container {
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.expander {
+  color: black;
+  text-align: left;
+}
+
+/* contact */
+.masterss {
+  margin: 20px 150px;
+}
+
+.masterss_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.masters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.masters_name {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.masters_prof {
+  font-size: 20px;
+}
+
+.masters_email, .masters_phone {
+  cursor: pointer;
+}
+
+/* candles_info */
+.candles_info {
+  margin: 50px 0 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.candles_info_img {
+  width: 380px;
+  height: 380px;
+  margin-right: 50px;
+}
+
+.candles_info_container {
+  margin-left: 50px;
+  max-width: 500px;
+}
+
+.candles_info_container p {
+  text-align: left;
+  font-size: 18px;
+}
+
+.candles_info_container .candles_info_name {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.comments {
+  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.comments .comment {
+  width: 800px;
+  background-color: white;
+  margin: 10px;
+  padding: 10px 40px;
+}
+
+.comments .comment p {
+  text-align: left;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.comments .comment .comm_cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.comments .comment .comm {
+  font-size: 18px;
+  font-weight: 400;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,30 @@
+/* @font-face {
+  font-family: 'Montserrat Alternates';
+  src: url('MontserratAlternates-Regular.eot');
+  src: local('Montserrat Alternates Regular'), local('MontserratAlternates-Regular'),
+      url('MontserratAlternates-Regular.eot?#iefix') format('embedded-opentype'),
+      url('MontserratAlternates-Regular.woff2') format('woff2'),
+      url('MontserratAlternates-Regular.woff') format('woff'),
+      url('MontserratAlternates-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+body {
+  background-color: #F5F5F5;
+  margin: 0;
+  font-family: Gilroy;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+*{
+  font-family: Gilroy;
+  letter-spacing: 1px;
+}

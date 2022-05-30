@@ -1,0 +1,366 @@
+$color: #564E4A;
+
+.section_name{
+    text-align: center;
+    font-size: 32px;
+    margin: 0;
+    padding: 30px 0;
+    &_white{
+        @extend .section_name;
+        padding-top: 150px;
+        color: white;
+        font-weight: 500;
+    }
+}
+
+.section_left{
+    @extend .section_name;
+    text-align: left;
+}
+
+.slogan{
+    text-align: center;
+    font-size: 18px;
+    margin: 5px;
+    &_white{
+        @extend .slogan;
+        color: white;
+        
+    }
+}
+
+@mixin flex($fl_dir, $just_con, $al_it){
+    display: flex;
+    flex-direction: $fl_dir;
+    justify-content: $just_con;
+    align-items: $al_it;
+}
+
+/* navigation */
+
+nav{
+    @include flex(row, space-between, center);
+    height: 60px;
+    padding: 20px 150px;
+    background-color: $color;
+    margin: 0;
+    .nav_container{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.btn{
+    text-align: center;
+    &_white{
+        font-size: 18px;
+        color: white;
+        font-weight: 500;
+        text-decoration: none;
+        margin: 0 30px;
+    }
+    &_black{
+        @extend .btn_white;
+        color: black;
+        font-weight: 500;
+        margin: 0;
+    }
+    &_banner{
+        padding-top: 50px;
+    }
+    &_submit{
+        margin-top: 30px;
+        align-self: flex-start;
+    }
+}
+
+.logo{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+/* main page */
+
+.banner{
+    background-image: url(../img/banner.png);
+    background-size: cover;
+    height: calc(100vh - 90px);
+    margin: 0;
+}
+
+.idea, .story, .join{
+    @include flex(row, space-between, center);
+    margin: 100px 150px;
+    &_image{
+        width: 580px;
+        height: 430px;
+        margin: 0;
+    }
+    &_text{
+        width: 500px;
+    }
+    &_form{
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+    }
+    .main_text{
+        text-align: left;
+        font-size: 18px;
+    }
+}
+
+.idea_image{
+    background-image: url(../img/idea.png);
+}
+
+.story_image{
+    background-image: url(../img/story.png);
+}
+
+.join_image{
+    background-image: url(../img/join.png);
+}
+
+.btn_submit{
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 18px;
+    border: 0;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 30px 0;
+}
+
+.input{
+    width: 350px;
+    height: 40px;
+    padding: 2px 20px;
+    margin: 10px 0;
+    background-color: white;
+    border: 0px solid $color;
+    font-size: 18px;
+}
+
+/* catalog page */
+
+.select_container{
+    @include flex(row, space-between, center);
+    flex-wrap: wrap;
+    padding: 50px 175px 0 150px;
+    margin: 0;
+}
+
+.select{
+    background-color: white;
+    border: 0px;
+    width: 250px;
+    height: 40px;
+    margin: 0 10px;
+    padding: 2px 10px;
+    color: gray;
+    font-size: 18px;
+}
+
+/* footer */
+
+.contacts{
+    background-image: url(../img/footer.png);
+    background-size: cover;
+    height: 440px;
+    margin: 0;
+    &_item{
+        text-align: center;
+        font-size: 18px;
+        color: white;
+        line-height: 40px;
+        margin: 0;
+    }
+    &_name_white{
+        @extend .section_name_white;
+        padding-top: 120px;
+        
+    }
+    .social{
+        @include flex(row, center, center);
+        &_item{
+            font-size: 18px;
+            color: white;
+            font-weight: 600;
+            text-decoration: none;
+            padding-top: 80px;
+            margin: 0 40px;
+        }
+    }
+}
+
+
+/* candles */
+
+.candles{
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    height: 450px;
+    margin: 10px;
+    text-align: left;
+    font-size: 18px;
+    &_img{
+        width: 280px;
+        height: 280px;
+    }
+    &_name{
+        text-align: left;
+    }
+    &_price{
+        text-align: left;
+        font-weight: 600;
+    }
+}
+
+.btn_cart{
+    cursor: pointer;
+    background-color: transparent;
+    text-align: center;
+    font-size: 18px;
+    border: 0;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 10px 50px;
+}
+
+/* candles list */
+
+.candless{
+    &_list{
+        @include flex(row, flex-start, center);
+        flex-wrap: wrap;
+        margin: 100px 150px;
+    }
+}
+
+#error_result{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+.btn_search{
+    cursor: pointer;
+    background-color: $color;
+    border: 0px;
+    width: 120px;
+    height: 40px;
+    margin: 0 10px;
+    padding: 2px 10px;
+    color: white;
+    font-size: 18px;
+}
+
+.errors{
+    font-size: 14px;
+}
+
+
+/* quest */
+
+
+.quest_container{
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.expander{
+    color: black;
+    text-align: left;
+}
+
+
+/* contact */
+
+.masterss{
+    margin: 20px 150px;
+    &_list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.masters{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &_name{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    &_prof{
+        font-size: 20px;
+    }
+    &_email, &_phone{
+        cursor: pointer;
+    }
+}
+
+
+/* candles_info */
+
+.candles_info{
+    margin: 50px 0 100px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    &_img{
+        width: 380px;
+        height: 380px;
+        margin-right: 50px;
+    }
+    &_container{
+        margin-left: 50px;
+        max-width: 500px;
+        p{
+            text-align: left;
+            font-size: 18px;
+        }
+        .candles_info_name{
+            font-size: 20px;
+            font-weight: 500;
+        }
+    }
+}
+
+
+.comments{
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .comment{
+        width: 800px;
+        background-color: white;
+        margin: 10px;
+        padding: 10px 40px;
+        p{
+            text-align: left;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        .comm_cont{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .comm{
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
+}
+

@@ -1,0 +1,15 @@
+/* TODO: Move it to index.css */
+/* base overrides */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500&display=swap');
+
+
+p {
+  text-align: center;
+}
+
+*{
+  font-family: 'Montserrat Alternates', sans-serif;
+  letter-spacing: 1px;
+}
+
